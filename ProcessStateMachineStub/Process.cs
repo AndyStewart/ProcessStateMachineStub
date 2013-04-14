@@ -8,10 +8,5 @@
         }
 
         public IProcessState ProcessState { get; set; }
-
-        public void Execute()
-        {
-            ProcessState.Execute(this);
-        }
     }
 }

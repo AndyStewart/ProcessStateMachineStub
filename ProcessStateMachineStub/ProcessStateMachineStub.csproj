@@ -52,6 +52,7 @@
     <Compile Include="InProgressState.cs" />
     <Compile Include="IProcessState.cs" />
     <Compile Include="Process.cs" />
+    <Compile Include="ProcessExecuter.cs" />
     <Compile Include="ProcessExecuterBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ namespace ProcessStateMachineStub
     {
         public void Execute(Process process)
         {
-            Console.WriteLine("Executing CompleteState");
+            Console.WriteLine(process.Name + " - Executing CompleteState");
         }
     }
 }

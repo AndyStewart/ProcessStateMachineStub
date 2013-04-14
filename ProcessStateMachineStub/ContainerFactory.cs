@@ -8,9 +8,9 @@ namespace ProcessStateMachineStub
         {
             var builder = new ContainerBuilder();
             builder.RegisterType<ProcessExecuter>().As<ProcessExecuterBase>();
-            builder.RegisterType<ReadyState>().As<IProcessState>();
-            builder.RegisterType<InProgressState>().As<IProcessState>();
-            builder.RegisterType<CompleteState>().As<IProcessState>();
+            builder.RegisterType<ReadyState>().As<IProcessState>().AsSelf();
+            builder.RegisterType<InProgressState>().As<IProcessState>().AsSelf();
+            builder.RegisterType<CompleteState>().As<IProcessState>().AsSelf();
             var container = builder.Build();
             return container;
         }
